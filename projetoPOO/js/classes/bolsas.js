@@ -14,17 +14,10 @@ class Bolsa extends Caracteristicas {
     getCodigo() {
         return this._codigo;
     }
-    // getQuantidade(){
-    //     return this._quantidade
-    // }
-    // setQuantidade(novaQuantidade){
-    //     this._quantidade = novaQuantidade; 
-    // }
 
     exibirBolsa() {
         return this.exibirInfo() + `- quantidade : ${this.quantidade}` ;
     }
 }
-
 
 export default Bolsa;

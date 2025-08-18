@@ -35,11 +35,16 @@ function verificarEstoque() {
         alert("Nenhum produto cadastrado");
         return;
     }
+    
     const produtosFormatados = estoque.map((produto, index) => {
-    return `${index + 1}. ${produto.exibirBolsa()} - codigo : ${produto.getCodigo()}`;
+        const quantidade = produto.quantidade;
+        const mensagemQuantidade = quantidade < 10 ? " - Pouca quantidade!!" : "";
+        return `${index + 1}. ${produto.exibirBolsa()} - codigo: ${produto.getCodigo()}${mensagemQuantidade}`;
 });
 
-alert(produtosFormatados.join("\n")) 
+const totalProdutos = estoque.reduce((acumulador,produto) => acumulador + produto.quantidade, 0)
+
+alert(produtosFormatados.join("\n") + `\n\nTotal de produtos: ${estoque.length} \nQuantidade total de itens: ${totalProdutos}`);
 }
 
 function alterarEstoque() {
