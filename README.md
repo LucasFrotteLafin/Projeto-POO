@@ -2,7 +2,7 @@
 
 Tem como função :
 - Adicionar produtos ao estoque
-- Visualizar os produtos ja cadastrados
+- Visualizar os produtos ja cadastrados (quantidade total de itens e produtos)
 - Alterar informações dos produtos ja cadastrados
 - Remover produtos
 
