@@ -1,4 +1,4 @@
-<h1> Verificador de estoque </h1>
+<h1> Gerenciador de estoque </h1>
 
 Tem como função :
 - Adicionar produtos ao estoque
